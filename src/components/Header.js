@@ -83,7 +83,7 @@ const Header = props => (
               props.onOpenArticle('office')
             }}
           >
-            Office
+            Meet Us
           </button>
         </li>
       </ul>

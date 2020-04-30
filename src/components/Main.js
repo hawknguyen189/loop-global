@@ -194,11 +194,73 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Ecosystem</h2>
+          <h2 className="major">Visit Office</h2>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
-          <p>Ho Chi Minh Ha Noi Montreal</p>
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-4 text-center">
+                <h5>Montreal (HQ)</h5>
+              </div>
+              <div className="col-sm-4 text-center">
+                <h5>Ha Noi</h5>
+              </div>
+              <div className="col-sm-4 text-center">
+                <h5>Ho Chi Minh</h5>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-4">
+                <p>
+                  <strong>Address:</strong> 4026 Rue Mackenzie, Montreal,
+                  Quebec, H3S1E6
+                </p>
+              </div>
+              <div className="col-sm-4">
+                <p>
+                  <strong>Address:</strong> 1B Hoàng Hoa Thám St, Hà Đông, Hà
+                  Nội, Vietnam
+                </p>
+              </div>
+              <div className="col-sm-4">
+                <p>
+                  <strong>Address:</strong> 267 Thong Nhat St, Ward 10, Go vap
+                  District, Ho Chi Minh city, Vietnam
+                </p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-4">
+                <p>
+                  <strong>
+                    <i className="fas fa-mobile-alt contact-icon mr-2 text-center"></i>
+                  </strong>
+                  +1 514-984-4295
+                </p>
+              </div>
+              <div className="col-sm-4">
+                <p>
+                  <strong>
+                    <i className="fas fa-mobile-alt contact-icon mr-2 text-center"></i>
+                  </strong>
+                  +84 32-958-0696
+                </p>
+              </div>
+              <div className="col-sm-4">
+                <p>
+                  <i className="fas fa-mobile-alt contact-icon mr-2 text-center"></i>
+                  +84 32-958-0696
+                </p>
+              </div>
+            </div>
+            {/* google map */}
+            <div className="row">
+              <div className="col-sm-4"></div>
+              <div className="col-sm-4"></div>
+              <div className="col-sm-4"></div>
+            </div>
+          </div>
           {close}
         </article>
       </div>

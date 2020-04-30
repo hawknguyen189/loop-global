@@ -3,6 +3,7 @@ import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import Products from './Products/Products'
 
 class Main extends React.Component {
   render() {
@@ -22,84 +23,68 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="company"
-          className={`${this.props.article === 'company' ? 'active' : ''} ${
+          id="aboutus"
+          className={`${this.props.article === 'aboutus' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Company</h2>
+          <h2 className="major">About Us</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
           <p>
-            When you engage E2Global in a project you are not just adding a
-            vendor to your portfolio. You have engaged our consultative process.
-            From the beginning we will not place you in the box we have already
-            made but listen, ask questions and try to fully understand your
-            ideas and goals. Our expertise allows for flexibility. Our process
-            provides our clients with the ability to develop new ideas and our
-            capabilities allow for those Ideas and Goals to be fully realized.
-            By the way, check out my <a href="#work">awesome work</a>.
+            Loop Mondo helps our partners to grow organically by bringing truly
+            sustainable solutions in global manufacturing innovative and more
+            economically efficient. In the context of global economy and
+            international value chains, Loop Mondo optimize all step toward
+            material development, product design and manufacturing processes to
+            integrate the paths of environmental sustainability and economic
+            growth with the profitably of companies.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            Based in{' '}
+            <a
+              href=""
+              onClick={event => {
+                event.preventDefault()
+                this.props.onLinkArticle('office')
+              }}
+            >
+              Montreal
+            </a>
+            , with 2 offices in{' '}
+            <a
+              href=""
+              onClick={event => {
+                event.preventDefault()
+                this.props.onLinkArticle('office')
+              }}
+            >
+              HaNoi
+            </a>{' '}
+            and{' '}
+            <a
+              href=""
+              onClick={event => {
+                event.preventDefault()
+                this.props.onLinkArticle('office')
+              }}
+            >
+              Ho Chi Minh City
+            </a>
+            , Loop Mondo is uniquely positioned to create a perfect bridge to
+            growth your two way international trade and global manufacturing. By
+            experience in international development, manufacturing and
+            logistics, Loop Mondo accompanies our partners to create a
+            sustainable breakthrough. Certainly, YOU too, Loop Mondo provides
+            you with the powerful tools and resources to help your business grow
+            sustainably.
           </p>
           <p>
-            When you engage E2Global in a project you are not just adding a
-            vendor to your portfolio. You have engaged our consultative process.
-            From the beginning we will not place you in the box we have already
-            made but listen, ask questions and try to fully understand your
-            ideas and goals. Our expertise allows for flexibility. Our process
-            provides our clients with the ability to develop new ideas and our
-            capabilities allow for those Ideas and Goals to be fully realized.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
-          <p>
-            When you engage E2Global in a project you are not just adding a
-            vendor to your portfolio. You have engaged our consultative process.
-            From the beginning we will not place you in the box we have already
-            made but listen, ask questions and try to fully understand your
-            ideas and goals. Our expertise allows for flexibility. Our process
-            provides our clients with the ability to develop new ideas and our
-            capabilities allow for those Ideas and Goals to be fully realized.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            “The circular economy is a major transformational force that will
+            last decades…investors are increasingly considering sustainability
+            factors when making investment decisions” —BlackRock
           </p>
           {close}
         </article>
@@ -115,21 +100,7 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+          <Products></Products>
           {close}
         </article>
 
@@ -214,6 +185,20 @@ class Main extends React.Component {
               </a>
             </li>
           </ul>
+          {close}
+        </article>
+        <article
+          id="office"
+          className={`${this.props.article === 'office' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Ecosystem</h2>
+          <span className="image main">
+            <img src={pic03} alt="" />
+          </span>
+          <p>Ho Chi Minh Ha Noi Montreal</p>
           {close}
         </article>
       </div>

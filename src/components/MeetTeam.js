@@ -8,7 +8,7 @@ const MeetTeam = () => {
         <div className="row">
           <div className="col-sm-4 text-center">
             <img
-              src={require('../images/founders/AI-generated.jpg')}
+              src={require('../images/founders/bach-nguyen.jpg')}
               alt=""
               className="img-fluid"
             />

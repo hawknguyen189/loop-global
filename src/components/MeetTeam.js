@@ -30,19 +30,22 @@ const MeetTeam = () => {
               <i className="fas fa-envelope"></i> bachnx@loopmondo.com
             </p>
             <p>
-              Bach has a strong background in sustainability development. Lorem
-              ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-              eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-              erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-              lacinia quam. Integer sollicitudin mauris nec lorem luctus
-              ultrices. Aliquam libero et malesuada fames ac ante ipsum primis
-              in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem
-              ipsum dolor sit amet.
+              M.A. Bach Nguyen completed a Master of International Law from
+              Université François Rabelais de Tours (France) in 2009. Prior to
+              Master of law, Bach completed her undergraduate degree at
+              University of Foreign Languages (Hanoi) in French Language Faculty
+              in 2002. Since completing law master program, he spent 4 years
+              studying in Intellectual Property Law at Université de Sherbrooke
+              and living in Québec, Canada. He completed a Master of Environment
+              and Sustainable Development Management from Université de
+              Sherbrooke in 2016. M.A.
             </p>
             <p>
-              Bach is also the founder of TreO Bamboo which is a project aims to
-              promote eco-friendly solutions to home accessories. His famous
-              quote is "bambooing the planet for a better life".
+              Bach Nguyen has 10 years of working as an international project
+              manager in education and environment and over 5 years in
+              international trade and investment consulting between Canada and
+              Vietnam. Currently, Mr. Bach is the founder and CEO of TreO Bamboo
+              (Canada).
             </p>
           </div>
         </div>

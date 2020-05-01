@@ -4,6 +4,9 @@ import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 import Products from './Products/Products'
+import Ecosystem from './Ecosystem'
+import Office from './Office'
+import MeetTeam from './MeetTeam'
 
 class Main extends React.Component {
   render() {
@@ -90,13 +93,13 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="product"
-          className={`${this.props.article === 'product' ? 'active' : ''} ${
+          id="portfolio"
+          className={`${this.props.article === 'portfolio' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Products</h2>
+          <h2 className="major">Company Portfolio</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -115,15 +118,7 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
+          <Ecosystem></Ecosystem>
           {close}
         </article>
 
@@ -188,217 +183,15 @@ class Main extends React.Component {
           {close}
         </article>
         <article
-          id="office"
-          className={`${this.props.article === 'office' ? 'active' : ''} ${
+          id="meetus"
+          className={`${this.props.article === 'meetus' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <div id="office">
-            <h2 className="major">Visit Office</h2>
-            <span className="image main">
-              <img src={pic03} alt="" />
-            </span>
-            <div className="container">
-              <div className="row">
-                <div className="col-sm-4 text-center">
-                  <h5>Montreal</h5>
-                </div>
-                <div className="col-sm-4 text-center">
-                  <h5>Ha Noi (HQ)</h5>
-                </div>
-                <div className="col-sm-4 text-center">
-                  <h5>Ho Chi Minh</h5>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-4">
-                  <p>
-                    <strong>
-                      <i class="fas fa-map-marked-alt"></i>
-                    </strong>{' '}
-                    4026 Rue Mackenzie, Montreal, Quebec, H3S1E6
-                  </p>
-                </div>
-                <div className="col-sm-4">
-                  <p>
-                    <strong>
-                      <i class="fas fa-map-marked-alt"></i>
-                    </strong>{' '}
-                    1B Hoàng Hoa Thám St, Hà Đông, Hà Nội, Vietnam
-                  </p>
-                </div>
-                <div className="col-sm-4">
-                  <p>
-                    <strong>
-                      <i class="fas fa-map-marked-alt"></i>
-                    </strong>{' '}
-                    267 Thong Nhat St, Ward 10, Go vap District, Ho Chi Minh
-                    city, Vietnam
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-4">
-                  <p>
-                    <strong>
-                      <i className="fas fa-mobile-alt contact-icon mr-2 text-center"></i>
-                    </strong>
-                    +1 514-984-4295
-                  </p>
-                </div>
-                <div className="col-sm-4">
-                  <p>
-                    <strong>
-                      <i className="fas fa-mobile-alt contact-icon mr-2 text-center"></i>
-                    </strong>
-                    +84 32-958-0696
-                  </p>
-                </div>
-                <div className="col-sm-4">
-                  <p>
-                    <i className="fas fa-mobile-alt contact-icon mr-2 text-center"></i>
-                    +84 32-958-0696
-                  </p>
-                </div>
-              </div>
-              {/* google map */}
-              <div className="row">
-                <div className="col-sm-4"></div>
-                <div className="col-sm-4"></div>
-                <div className="col-sm-4"></div>
-              </div>
-            </div>
-          </div>
+          <Office></Office>
           {/* meet the team div  */}
-          <div className="pt-3" id="meetTeam">
-            <h2 className="major">Meet The Team</h2>
-            <div className="container">
-              <div className="row">
-                <div className="col-sm-4 text-center">
-                  <img
-                    src={require('../images/founders/AI-generated.jpg')}
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-                <div className="col-sm-8">
-                  <h6 className="mb-0">
-                    <strong>Nguyen, Bach</strong>
-                  </h6>
-                  <p className="mb-0">
-                    <strong>Founder</strong>
-                  </p>
-                  <p className="mb-0">
-                    <em>CEO</em>
-                  </p>
-                  <p className="mb-0">
-                    <i class="fas fa-phone-volume"></i> (+1) 514-984-4295
-                  </p>
-                  <p>
-                    <i class="fas fa-envelope"></i> bachnx@loopmondo.com
-                  </p>
-                  <p>
-                    Bach has a strong background in sustainability development.
-                    Lorem ipsum dolor sit amet, consectetur et adipiscing elit.
-                    Praesent eleifend dignissim arcu, at eleifend sapien
-                    imperdiet ac. Aliquam erat volutpat. Praesent urna nisi,
-                    fringila lorem et vehicula lacinia quam. Integer
-                    sollicitudin mauris nec lorem luctus ultrices. Aliquam
-                    libero et malesuada fames ac ante ipsum primis in faucibus.
-                    Cras viverra ligula sit amet ex mollis mattis lorem ipsum
-                    dolor sit amet.
-                  </p>
-                  <p>
-                    Bach is also the founder of TreO Bamboo which is a project
-                    aims to promote eco-friendly solutions to home accessories.
-                    His famous quote is "bambooing the planet for a better
-                    life".
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-4 text-center">
-                  <img
-                    src={require('../images/founders/AI-generated-2.jpg')}
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-                <div className="col-sm-8">
-                  <h6 className="mb-0">
-                    <strong>Nguyen, Tung</strong>
-                  </h6>
-                  <p className="mb-0">
-                    <strong>Founder</strong>
-                  </p>
-                  <p className="mb-0">
-                    <em>Supplier Relationship Manager, CTO</em>
-                  </p>
-                  <p className="mb-0">
-                    <i class="fas fa-phone-volume"></i> (+84) 32-958-0696
-                  </p>
-                  <p>
-                    <i class="fas fa-envelope"></i> tungnt@loopmondo.com
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur et adipiscing elit.
-                    Praesent eleifend dignissim arcu, at eleifend sapien
-                    imperdiet ac. Aliquam erat volutpat. Praesent urna nisi,
-                    fringila lorem et vehicula lacinia quam. Integer
-                    sollicitudin mauris nec lorem luctus ultrices. Aliquam
-                    libero et malesuada fames ac ante ipsum primis in faucibus.
-                    Cras viverra ligula sit amet ex mollis mattis lorem ipsum
-                    dolor sit amet.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur et adipiscing elit.
-                    Praesent eleifend dignissim arcu, at eleifend sapien
-                    imperdiet ac. 
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-4 text-center">
-                  <img
-                    src={require('../images/founders/hoc-nguyen.jpg')}
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-                <div className="col-sm-8">
-                  <h6 className="mb-0">
-                    <strong>Nguyen, Hoc</strong>
-                  </h6>
-                  <p className="mb-0">
-                    <strong>Founder</strong>
-                  </p>
-                  <p className="mb-0">
-                    <em>Operation Manager, Web Dev</em>
-                  </p>
-                  <p className="mb-0">
-                    <i class="fas fa-phone-volume"></i> (+1) 514-984-4295
-                  </p>
-                  <p>
-                    <i class="fas fa-envelope"></i> hocnt@loopmondo.com
-                  </p>
-                  <p>
-                    Hoc is a founding partner at Loop Mondo. He assumes the role
-                    of Operation Manager, Web Dev, among many other things.
-                    After graduating B.B.A degree in both International Business
-                    and information system from Troy University, AL, US, he
-                    found his passion in connecting the world by filling in the
-                    gap between emerging and emerged countries and easing the
-                    hurdle of global supply chain management.
-                  </p>
-                  <p>
-                    Hoc spent several years working in logistics industry and
-                    later freelancer web developer.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <MeetTeam></MeetTeam>
           {close}
         </article>
       </div>

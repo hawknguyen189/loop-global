@@ -53,10 +53,10 @@ const Header = props => (
         <li className="">
           <button
             onClick={() => {
-              props.onOpenArticle('product')
+              props.onOpenArticle('portfolio')
             }}
           >
-            Products
+            Portfolio
           </button>
         </li>
         <li>
@@ -80,7 +80,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('office')
+              props.onOpenArticle('meetus')
             }}
           >
             Meet Us

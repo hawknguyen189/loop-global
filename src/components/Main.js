@@ -100,9 +100,6 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Company Portfolio</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
           <Products></Products>
           {close}
         </article>

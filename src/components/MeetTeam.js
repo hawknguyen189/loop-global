@@ -46,10 +46,12 @@ const MeetTeam = () => {
             </p>
           </div>
         </div>
+        {/* end founder intro */}
+        <div className="team-slider mx-auto"></div>
         <div className="row">
           <div className="col-sm-4 text-center">
             <img
-              src={require('../images/founders/AI-generated-2.jpg')}
+              src={require('../images/founders/tung-nguyen-white.jpg')}
               alt=""
               className="img-fluid"
             />
@@ -71,20 +73,25 @@ const MeetTeam = () => {
               <i className="fas fa-envelope"></i> tungnt@loopmondo.com
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur et adipiscing elit.
-              Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac.
-              Aliquam erat volutpat. Praesent urna nisi, fringila lorem et
-              vehicula lacinia quam. Integer sollicitudin mauris nec lorem
-              luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum
-              primis in faucibus. Cras viverra ligula sit amet ex mollis mattis
-              lorem ipsum dolor sit amet.
+              Tung is the co-founder of LoopMondo. He takes on the role of
+              research and development of technology and design (CTO) and
+              Supplier Relationship Manager. He is passionate about creating and
+              designing projects of high economic and cultural value in the
+              present but still ensures sustainable development in the future .
+              According to the judgment, each country must find its unique
+              socio-economic and environmental heritage values to have a high
+              position in the world.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur et adipiscing elit.
-              Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac.
+              He graduated with a DPEA- master's degree in urban design,
+              heritage and sustainable development from the National University
+              of Architecture in Toulouse (France) and Hanoi Architectural
+              University (Vietnam).
             </p>
           </div>
         </div>
+        {/* end founder intro */}
+        <div className="team-slider mx-auto"></div>
         <div className="row">
           <div className="col-sm-4 text-center">
             <img

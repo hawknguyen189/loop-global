@@ -17,7 +17,7 @@ const Header = props => (
                   <span>
                     <a href="" className="">
                       <img
-                        src={require('../images/loop-logo.png')}
+                        src={require('../images/loop-mondo.png')}
                         alt=""
                         width="90"
                         height="90"

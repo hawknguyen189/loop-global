@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+// import SiteBanner from "./Utils/SiteBanner"
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -24,7 +25,7 @@ const Header = props => (
                       />
                     </a>
                   </span>
-                  <h1>Global</h1>
+                  <h1>Mondo</h1>
                 </div>
               </div>
             </div>

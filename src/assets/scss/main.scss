@@ -53,7 +53,7 @@
 @import 'layout/footer';
 body {
   color: white !important;
-  font-family: 'Source Sans Pro' !important;
+  font-family: 'Playfair Display', serif!important;
 }
 a {
   color: white !important;
@@ -96,4 +96,47 @@ path {
   width: 36%;
   height: 3px;
   background: #00d95c;
+}
+.warning {
+  background-color: #d5264a !important;
+  color: snow;
+  border-color: #b8daff;
+  position: fixed;
+  top: 0;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  z-index: 1001;
+  width: 100%;
+}
+.portfolio-collection {
+  position: relative;
+  .portfolio-item:hover {
+    img {
+      // transform: scale(1.3);
+      transform: scale3d(1.1, 1.1, 1.1);
+      opacity: 0.2;
+      transition: all 1s;
+    }
+    .item-text{
+      display: block!important;
+    }
+  }
+  .portfolio-item{
+    position: relative;
+    .item-text{
+      position: absolute;
+      top:30%;
+      left: 10%;
+      z-index: 1010;
+    }
+    a{
+      border-bottom: none!important;
+    }
+  }
+}
+.default-portfolio {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  z-index: 1001;
 }

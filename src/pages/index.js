@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
+import SiteBanner from '../components/Utils/SiteBanner'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -101,6 +102,16 @@ class IndexPage extends React.Component {
           }`}
         >
           <div id="wrapper">
+            <SiteBanner
+              isArticleVisible={this.state.isArticleVisible}
+              timeout={this.state.timeout}
+              articleTimeout={this.state.articleTimeout}
+              article={this.state.article}
+              onCloseArticle={this.handleCloseArticle}
+              setWrapperRef={this.setWrapperRef}
+              onOpenArticle={this.handleOpenArticle}
+              onLinkArticle={this.handleLinkArticle}
+            ></SiteBanner>
             <Header
               onOpenArticle={this.handleOpenArticle}
               timeout={this.state.timeout}

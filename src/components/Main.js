@@ -100,7 +100,12 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Company Portfolio</h2>
-          <Products></Products>
+          <Products
+            portfolioIntro={this.props.portfolioIntro}
+            portfolioPPE={this.props.portfolioPPE}
+            onHandlePortfolio={this.props.onHandlePortfolio}
+            onHandleDefault={this.props.onHandleDefault}
+          ></Products>
           {close}
         </article>
 

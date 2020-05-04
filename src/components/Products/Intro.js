@@ -1,8 +1,13 @@
 import React from 'react'
-const Intro = () => {
+const Intro = props => {
   return (
     <div>
-      <div className="container">
+      <div
+        className={`${
+          props.portfolioIntro === true ? 'd-block' : 'd-none'
+        } container portfolio-intro`}
+        id="portfolioIntro"
+      >
         <div className="row">
           <p>
             As a result from the ten flattening forces derived by Friedman, the
@@ -21,72 +26,78 @@ const Intro = () => {
         </div>
       </div>
       <div className="container pb-3 px-5 portfolio-collection">
-        <div className="row default-portfolio">
-          <div className="col-sm">
-            <img
-              src={require('../../images/loop-mondo.png')}
-              alt="loop-mondo-logo"
-              className="img-fluid"
-              width="180"
-              height="auto"
-            />
+        <div className="row default-portfolio" onClick={props.handleDefault}>
+          <div className="col-sm portfolio-logo">
+            <a href="">
+              <img
+                src={require('../../images/loop-mondo.png')}
+                alt="loop-mondo-logo"
+                className="img-fluid"
+                width="180"
+                height="auto"
+              />
+            </a>
           </div>
         </div>
         <div className="row pb-1 px-5">
           <div className="col-sm-6 pr-1 portfolio-item text-center">
-            <a href="">
+            <a href="" onClick={props.handlePortfolio} id="PPE">
               <div className="item-text d-none">
-                <h5>Personal Protective Equipment</h5>
+                <h5 className="portfolio-ppe">Personal Protective Equipment</h5>
               </div>
               <img
                 src={require('../../images/portfolio/ppe.png')}
                 alt=""
-                className="img-fluid rounded"
+                className="img-fluid rounded portfolio-ppe"
               />
             </a>
           </div>
           <div className="col-sm-6 pl-1 portfolio-item text-center">
-            <a href="">
+            <a href="" onClick={props.handlePortfolio}>
               <div className="item-text d-none">
-                <h5>Nature Handcraft</h5>
+                <h5 className="portfolio-handcraft">Nature Handcraft</h5>
               </div>
               <img
                 src={require('../../images/portfolio/nature-craft.png')}
                 alt=""
-                className="img-fluid rounded"
+                className="img-fluid rounded portfolio-handcraft"
               />
             </a>
           </div>
         </div>
-        <div className="row px-5">
+        <div className="row px-5 pt-1">
           <div className="col-sm-6 pr-1 portfolio-item text-center">
-            <a href="">
+            <a href="" onClick={props.handlePortfolio}>
               <div className="item-text d-none">
-                <h5>OEM Shoes & Clothing</h5>
+                <h5 className="portfolio-OEM">OEM Shoes & Clothing</h5>
               </div>
               <img
                 src={require('../../images/portfolio/sewing.png')}
                 alt=""
-                className="img-fluid rounded"
+                className="img-fluid rounded portfolio-OEM"
               />
             </a>
           </div>
           <div className="col-sm-6 pl-1 portfolio-item text-center">
-            <a href="">
+            <a href="" onClick={props.handlePortfolio}>
               <div className="item-text d-none">
-                <h5>Special Request</h5>
+                <h5 className="portfolio-special">Special Request</h5>
               </div>
               <img
                 src={require('../../images/portfolio/special-request.png')}
                 alt=""
-                className="img-fluid rounded"
+                className="img-fluid rounded portfolio-special"
               />
             </a>
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="ppe d-none">
+      <div
+        className={`${
+          props.portfolioPPE === true ? 'd-block' : 'd-none'
+        } container `}
+      >
+        <div className="ppe">
           <h4>COVID-19 YOU CAN COUNT ON US </h4>
           <h6>Importance of masks and respirators</h6>
           <p>

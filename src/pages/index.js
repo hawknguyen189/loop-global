@@ -15,12 +15,19 @@ class IndexPage extends React.Component {
       articleTimeout: false,
       article: '',
       loading: 'is-loading',
+      portfolioIntro: true,
+      portfolioPPE: false,
+      portfolioHandcraft: false,
+      portfolioOEM: false,
+      portfolioSpecial: false,
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleLinkArticle = this.handleLinkArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
     this.setWrapperRef = this.setWrapperRef.bind(this)
     this.handleClickOutside = this.handleClickOutside.bind(this)
+    this.handlePortfolio = this.handlePortfolio.bind(this)
+    this.handleDefault = this.handleDefault.bind(this)
   }
 
   componentDidMount() {
@@ -40,7 +47,66 @@ class IndexPage extends React.Component {
   setWrapperRef(node) {
     this.wrapperRef = node
   }
-
+  handlePortfolio = event => {
+    let index
+    event.preventDefault()
+    this.setState({ portfolioIntro: false })
+    event.persist()
+    const classArray = event.target.className.split(' ')
+    for (let i = 0; i < classArray.length; i++) {
+      if (classArray[i].includes('portfolio')) {
+        index = i
+        break
+      }
+    }
+    switch (classArray[index]) {
+      case 'portfolio-ppe':
+        this.setState({
+          portfolioPPE: true,
+          portfolioHandcraft: false,
+          portfolioOEM: false,
+          portfoliospecial: false,
+        })
+        console.log('done')
+        break
+      case 'portfolio-handcraft':
+        this.setState({
+          portfolioHandcraft: true,
+          portfolioPPE: false,
+          portfolioOEM: false,
+          portfoliospecial: false,
+        })
+        break
+      case 'portfolio-OEM':
+        this.setState({
+          portfolioOEM: true,
+          portfolioPPE: false,
+          portfolioHandcraft: false,
+          portfoliospecial: false,
+        })
+        break
+      case 'portfolio-special':
+        this.setState({
+          portfoliospecial: true,
+          portfolioPPE: false,
+          portfolioHandcraft: false,
+          portfolioOEM: false,
+        })
+        break
+    }
+  }
+  handleDefault = event => {
+    event.preventDefault()
+    this.setState({
+      portfolioIntro: true,
+      portfolioPPE: false,
+      portfolioHandcraft: false,
+      portfolioOEM: false,
+      portfoliospecial: false,
+    })
+    // event.persist()
+    // console.log(event)
+  }
   handleOpenArticle(article) {
     this.setState({
       isArticleVisible: !this.state.isArticleVisible,
@@ -89,6 +155,7 @@ class IndexPage extends React.Component {
     if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
       if (this.state.isArticleVisible) {
         this.handleCloseArticle()
+        this.setState({ portfolioIntro: true })
       }
     }
   }
@@ -121,10 +188,14 @@ class IndexPage extends React.Component {
               timeout={this.state.timeout}
               articleTimeout={this.state.articleTimeout}
               article={this.state.article}
+              portfolioIntro={this.state.portfolioIntro}
+              portfolioPPE={this.state.portfolioPPE}
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
               onOpenArticle={this.handleOpenArticle}
               onLinkArticle={this.handleLinkArticle}
+              onHandlePortfolio={this.handlePortfolio}
+              onHandleDefault={this.handleDefault}
             />
             <Footer timeout={this.state.timeout} />
           </div>

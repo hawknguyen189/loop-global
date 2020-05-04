@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'LoopGlobal - Connecting the World',
-    author: 'LoopGlobal',
-    description: 'LoopGlobal main page',
+    title: 'Loop Mondo - Connecting the World',
+    author: 'LoopMondo',
+    description: 'LoopMondo main page',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

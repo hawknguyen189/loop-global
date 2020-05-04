@@ -1,11 +1,16 @@
 import React from 'react'
-import PPE from "./PPE"
+import PPE from './PPE'
 import Intro from './Intro'
 
-const Products = () => {
+const Products = props => {
   return (
     <div>
-      <Intro></Intro>
+      <Intro
+        portfolioIntro={props.portfolioIntro}
+        portfolioPPE={props.portfolioPPE}
+        handlePortfolio={props.onHandlePortfolio}
+        handleDefault={props.onHandleDefault}
+      ></Intro>
       <PPE></PPE>
     </div>
   )

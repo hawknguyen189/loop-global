@@ -53,7 +53,8 @@
 @import 'layout/footer';
 body {
   color: white !important;
-  font-family: 'Playfair Display', serif!important;
+  font-family: 'Playfair Display', serif !important;
+  line-height: 2em !important;
 }
 a {
   color: white !important;
@@ -117,20 +118,20 @@ path {
       opacity: 0.2;
       transition: all 1s;
     }
-    .item-text{
-      display: block!important;
+    .item-text {
+      display: block !important;
     }
   }
-  .portfolio-item{
+  .portfolio-item {
     position: relative;
-    .item-text{
+    .item-text {
       position: absolute;
-      top:30%;
+      top: 30%;
       left: 10%;
       z-index: 1010;
     }
-    a{
-      border-bottom: none!important;
+    a {
+      border-bottom: none !important;
     }
   }
 }
@@ -139,4 +140,10 @@ path {
   top: 35%;
   left: 38%;
   z-index: 1001;
+}
+.portfolio-intro {
+  p {
+    font-family: "Source Sans Pro", sans-serif!important;
+    font-weight: 500 !important;
+  }
 }

@@ -162,14 +162,20 @@ const Ecosystem = () => {
       <div className="d-flex justify-content-center">
         <svg className="" id="ecosystemD3"></svg>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-        eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat
-        volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam.
-        Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et
-        malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula
-        sit amet ex mollis mattis lorem ipsum dolor sit amet.
-      </p>
+      <div className="container ecosystem-intro">
+        <div className="row">
+        <p className="font-weight-light">
+          Loop Mondo’s ecosystem is a circle database using IA to promote the
+          circular economy not only in a given jurisdiction but also by
+          optimizing synergies in working with other countries to achieve
+          material circularity and ultimately decoupling of resource use from
+          economic growth at the macro level.
+        </p>
+        </div>
+        <div className="row">
+
+        </div>
+      </div>
     </div>
   )
 }

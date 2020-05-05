@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react'
 import D3Gear from './Utils/D3Gear'
+import ecoSystemForm from './Utils/ecoSystemForm'
 // import graph from './graph'
 const Ecosystem = () => {
   useEffect(D3Gear, []) //useEffect will run only 1 time
+  useEffect(ecoSystemForm, []) //useEffect will run only 1 time
   return (
     <div>
       <div className="d-flex justify-content-center">
@@ -18,17 +20,18 @@ const Ecosystem = () => {
             economic growth at the macro level.
           </p>
         </div>
-        <div className="row pt-3">
-          <h6 className="text-center">
-            Please help fill out the below that helps us screen and match the
-            perfect feasible solution
-          </h6>
+        <div className="row pt-3 ">
           <form
             className="gform"
             method="POST"
             action="https://script.google.com/macros/s/AKfycbx6BIcAOh8uEp2muIAxyZ5_5ekI9Gpdi35JrQRu/exec"
+            id="ecosystemForm"
           >
-            <div className="form-elements">
+            <div className="form-elements" id="ecosystemElements">
+              <h6 className="text-center ecosystem-announce">
+                Please help fill out the below that helps us screen and match
+                the perfect feasible solution
+              </h6>
               <fieldset className="form-group">
                 <label htmlFor="name">Name: </label>
                 <input
@@ -46,8 +49,20 @@ const Ecosystem = () => {
                   name="Business Type"
                   rows="10"
                 >
-                  <option>Input</option>
-                  <option>Output</option>
+                  <option
+                    data-toggle="tooltip"
+                    data-placement="left"
+                    title="Manufacturer, Producer, Resource, Service"
+                  >
+                    Input
+                  </option>
+                  <option
+                    data-toggle="tooltip"
+                    data-placement="left"
+                    title="Industry, Distributor, Trader"
+                  >
+                    Output
+                  </option>
                 </select>
               </div>
 
@@ -107,10 +122,10 @@ const Ecosystem = () => {
             </div>
 
             {/* <!-- Customise the Thankyou Message People See when they submit the form: --> */}
-            <div className="thankyou_message" style={{ display: 'none' }}>
-              <h2>
+            <div className="thankyou-eco-message" style={{ display: 'none' }}>
+              <h5 className="text-center">
                 <em>Thanks</em> for contacting us! We will get back to you soon!
-              </h2>
+              </h5>
             </div>
           </form>
         </div>

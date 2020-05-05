@@ -1,9 +1,10 @@
-(function() {
+const contactForm = () => {
   // get all data in form and return object
+  console.log('running form handler')
   function getFormData(form) {
     var elements = form.elements
     var honeypot
-
+    console.log('inside 1 sample func')
     var fields = Object.keys(elements)
       .filter(function(k) {
         if (elements[k].name === 'honeypot') {
@@ -73,11 +74,11 @@
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4 && xhr.status === 200) {
         form.reset()
-        var formElements = form.querySelector('.form-elements')
+        var formElements = form.querySelector('#contactElements')
         if (formElements) {
           formElements.style.display = 'none' // hide form
         }
-        var thankYouMessage = form.querySelector('.thankyou_message')
+        var thankYouMessage = form.querySelector('.thankyou-contact-message')
         if (thankYouMessage) {
           thankYouMessage.style.display = 'block'
         }
@@ -94,12 +95,12 @@
 
   function loaded() {
     // bind to the submit event of our form
-    var forms = document.querySelectorAll('form.gform')
+    console.log('finished loaded')
+    var forms = document.querySelectorAll('#contactForm')
     for (var i = 0; i < forms.length; i++) {
       forms[i].addEventListener('submit', handleFormSubmit, false)
     }
   }
-  document.addEventListener('DOMContentLoaded', loaded, false)
 
   function disableAllButtons(form) {
     var buttons = form.querySelectorAll('button')
@@ -107,4 +108,6 @@
       buttons[i].disabled = true
     }
   }
-})()
+  loaded()
+}
+export default contactForm

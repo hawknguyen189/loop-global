@@ -133,7 +133,7 @@ class Main extends React.Component {
         >
           <h2 className="major">Contact</h2>
           <form
-            class="gform"
+            className="gform"
             method="POST"
             action="https://script.google.com/macros/s/AKfycbzj1IPU-7uQk69pLXc0PyrdOyyCxcVJf4r7Wj0VkA/exec"
           >
@@ -151,8 +151,8 @@ class Main extends React.Component {
             </div>
             <ul className="actions">
               <li>
-                <button class="button-success pure-button button-xlarge">
-                  <i class="fa fa-paper-plane"></i>&nbsp;Send
+                <button className="button-success pure-button button-xlarge">
+                  <i className="fa fa-paper-plane"></i>&nbsp;Send
                 </button>
               </li>
               <li>

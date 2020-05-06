@@ -1,4 +1,4 @@
-const ecoSystemForm = () => {
+const ecoForm = () => {
   // get all data in form and return object
   function getFormData(form) {
     var elements = form.elements
@@ -107,4 +107,4 @@ const ecoSystemForm = () => {
   }
   loaded()
 }
-export default ecoSystemForm
+export default ecoForm

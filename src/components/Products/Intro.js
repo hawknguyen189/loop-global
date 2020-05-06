@@ -22,7 +22,7 @@ const Intro = props => {
             enables us the ability to match the challenges regarding the
             circular economy with best possible solutions.
           </p>
-          <p>"It's a Flat World, After All" - Thomas L. Friedman</p>
+          <p>"It's a Flat World, After All" - Thomas L. Friedman.</p>
         </div>
       </div>
       <div className="container pb-3 px-5 portfolio-collection">

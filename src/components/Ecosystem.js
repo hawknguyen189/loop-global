@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import D3Gear from './Utils/D3Gear'
-import ecoSystemForm from './Utils/ecoSystemForm'
+// import ecoSystemForm from './Utils/ecoSystemForm'
 // import graph from './graph'
 const Ecosystem = () => {
   useEffect(D3Gear, []) //useEffect will run only 1 time

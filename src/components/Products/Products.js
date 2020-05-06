@@ -11,7 +11,7 @@ const Products = props => {
         handlePortfolio={props.onHandlePortfolio}
         handleDefault={props.onHandleDefault}
       ></Intro>
-      <PPE></PPE>
+      <PPE portfolioPPE={props.portfolioPPE}></PPE>
     </div>
   )
 }

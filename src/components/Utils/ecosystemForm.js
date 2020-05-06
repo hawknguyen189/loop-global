@@ -4,7 +4,6 @@ const ecoSystemForm = () => {
   function getFormData(form) {
     var elements = form.elements
     var honeypot
-    console.log('inside 1 sample func')
     var fields = Object.keys(elements)
       .filter(function(k) {
         if (elements[k].name === 'honeypot') {
@@ -95,7 +94,6 @@ const ecoSystemForm = () => {
 
   function loaded() {
     // bind to the submit event of our form
-    console.log('finished loaded')
     var forms = document.querySelectorAll('#ecosystemForm')
     for (var i = 0; i < forms.length; i++) {
       forms[i].addEventListener('submit', handleFormSubmit, false)

@@ -92,42 +92,6 @@ const Intro = props => {
           </div>
         </div>
       </div>
-      <div
-        className={`${
-          props.portfolioPPE === true ? 'd-block' : 'd-none'
-        } container `}
-      >
-        <div className="ppe">
-          <h4>COVID-19 YOU CAN COUNT ON US </h4>
-          <h6>Importance of masks and respirators</h6>
-          <p>
-            Masks and respirators (personal respiratory protective devices) are
-            essential during the COVID- 19 outbreak. They help slow the spread
-            of the disease and protect health care providers. Both masks and
-            respirators need to be used in combination with appropriate eye
-            protection (e.g., face shield, goggles) to achieve full protection
-            of the eyes, nose and mouth. All our medical instrument are approved
-            by the FDA (Food and Drug Administration of the United State) and CE
-            Consequently, Loop Mondo will continue its operations during the
-            pandemic period to reduce the spread of Covid-19. Please note that
-            all of our carriers have respectively implemented hygiene measures
-            to ensure the continuity of their operations. To ensure accurate
-            information about health protection products, we officially use the
-            email contact@loopmondo.com only to communicate with you. Thank you
-            for your understanding and take care of yourself and your loved
-            ones.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
-        </div>
-      </div>
     </div>
   )
 }

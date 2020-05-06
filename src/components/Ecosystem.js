@@ -4,7 +4,7 @@ import ecoSystemForm from './Utils/ecoSystemForm'
 // import graph from './graph'
 const Ecosystem = () => {
   useEffect(D3Gear, []) //useEffect will run only 1 time
-  useEffect(ecoSystemForm, []) //useEffect will run only 1 time
+  // useEffect(ecoSystemForm, []) //useEffect will run only 1 time
   return (
     <div>
       <div className="d-flex justify-content-center">

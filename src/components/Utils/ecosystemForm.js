@@ -1,6 +1,5 @@
 const ecoSystemForm = () => {
   // get all data in form and return object
-  console.log('running form handler')
   function getFormData(form) {
     var elements = form.elements
     var honeypot

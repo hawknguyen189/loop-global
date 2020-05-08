@@ -4,7 +4,7 @@ import landingForm from '../Utils/landingForm'
 const Background = () => {
   useEffect(landingForm, [])
   return (
-    <div className="landing-container px-sm-5 mx-sm-5">
+    <div className="landing-container px-lg-5 mx-lg-5">
       <div className="lp-background">
         <div className="container">
           <div className="lp-heading pt-4 pb-2">

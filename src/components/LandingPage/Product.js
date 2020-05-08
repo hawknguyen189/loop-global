@@ -39,7 +39,7 @@ const Product = () => {
               <div className="product-action">
                 <div className="container justify-content-center">
                   <ul>
-                    <li>Clear Film Protect Face and Eyes</li>
+                    <li>Clear Film Protect Face & Eyes</li>
                     <li>Certificate: FDA, CE</li>
                   </ul>
                 </div>

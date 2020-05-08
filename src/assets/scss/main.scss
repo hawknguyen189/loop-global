@@ -51,6 +51,14 @@
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/footer';
+$main-green-text: #8eb359;
+$brown-text: #333;
+$gray-text: #696969;
+$light-gray-text: #aaa;
+$font-alata: 'Alata', sans-serif;
+$font-display: 'Playfair Display', serif;
+$light-gray-background: #f8f7f7;
+
 body {
   color: white !important;
   font-family: 'Playfair Display', serif !important;
@@ -192,6 +200,77 @@ path {
   .ceo-quote {
     strong {
       color: black !important;
+    }
+  }
+  .lp-products {
+    p {
+      color: black !important;
+    }
+    .product-shelf {
+      .product-lot:hover {
+        border-color: $main-green-text;
+        .product-name {
+          color: $main-green-text;
+        }
+        img {
+          transform: scale(0.9);
+          opacity: 0.25;
+        }
+        .product-action {
+          visibility: visible !important;
+        }
+      }
+      .product-lot {
+        .product-thumb {
+          img {
+            transition: all 0.5s;
+          }
+          height:240px;
+        }
+        .product-container{
+          // height:100%;
+        }
+        .product-desc {
+          position: relative;
+          height:100%;
+          a {
+            font-size: 1.2em;
+            font-family: $font-display;
+            letter-spacing: 0.05em;
+            color: $brown-text;
+            font-weight: 700;
+            transition: all 0.2s;
+          }
+          .product-price {
+            font-family: $font-display;
+            font-style: italic;
+            font-size: 0.9em;
+            font-weight: 700;
+            color: $gray-text;
+          }
+          .product-action {
+            visibility: hidden;
+            position: absolute;
+            top: -180%;
+            left: 0%;
+            // height:100%;
+            width: 100%;
+            color: black!important;
+            // top: calc(height*0.5);
+            a {
+              width: 48px;
+              height: 48px;
+              background-color: $gray-text;
+              color: snow;
+              opacity: 0.9;
+              font-size: 1em;
+            }
+            .add-to-cart > a {
+              background-color: $main-green-text;
+            }
+          }
+        }
+      }
     }
   }
   .policy {

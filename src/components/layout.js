@@ -12,7 +12,7 @@ const Layout = ({ children, location }) => {
     content = <div>{children}</div>
   } else {
     content = (
-      <div id="wrapper" className="page">
+      <div id="subPage" className="page">
         <div>{children}</div>
       </div>
     )

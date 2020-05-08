@@ -143,11 +143,60 @@ path {
 }
 .portfolio-intro {
   p {
-    font-family: "Source Sans Pro", sans-serif!important;
+    font-family: 'Source Sans Pro', sans-serif !important;
     font-weight: 500 !important;
   }
 }
-.ppe-collection{
-  font-family: "Source Sans Pro", sans-serif!important;
+.ppe-collection {
+  font-family: 'Source Sans Pro', sans-serif !important;
   font-weight: 500 !important;
+}
+.landing-page {
+  width: 100vw;
+  background-color: white !important;
+  .lp-background {
+    background: url('../../images/landing-page/landing-page-bg.png');
+    background-size: cover;
+    // height: 100vh;
+    color: black;
+    strong {
+      color: black;
+    }
+  }
+  .lp-form {
+    form {
+      label {
+        color: black;
+      }
+      input[type='tel'] {
+        height: 2.75rem;
+      }
+      input[type='reset'] {
+        color: black !important;
+      }
+      button {
+        color: black !important;
+      }
+      textarea {
+        height: 300px;
+      }
+    }
+  }
+  .lp-desc {
+    color: black !important;
+    i {
+      text-align: center;
+      font-size: 50px;
+    }
+  }
+  .ceo-quote {
+    strong {
+      color: black !important;
+    }
+  }
+  .policy {
+    p {
+      color: black !important;
+    }
+  }
 }

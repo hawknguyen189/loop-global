@@ -4,12 +4,12 @@ const Product = () => {
   return (
     <div className="container lp-products py-4">
       <div className="row product-shelf">
-        <div className="col-sm-3 product-lot">
+        <div className="col-sm-3 product-lot py-2">
           <div className="card product-container">
-            <div className="product-thumb">
+            <div className="product-thumb d-flex">
               <img
                 src={require('../../images/products/4ply-face-mask.png')}
-                className="card-img-top rounded"
+                className="card-img-top rounded align-self-center"
                 alt="4 ply face mask"
               />
             </div>
@@ -26,12 +26,12 @@ const Product = () => {
             </div>
           </div>
         </div>
-        <div className="col-sm-3 product-lot">
+        <div className="col-sm-3 product-lot py-2">
           <div className="card product-container">
-            <div className="product-thumb">
+            <div className="product-thumb  d-flex">
               <img
                 src={require('../../images/products/face-shield-loop-mondo.png')}
-                className="card-img-top rounded"
+                className="card-img-top rounded align-self-center"
                 alt="face-shield-loop-mondo"
               />
             </div>
@@ -48,12 +48,12 @@ const Product = () => {
             </div>
           </div>
         </div>
-        <div className="col-sm-3 product-lot">
+        <div className="col-sm-3 product-lot py-2">
           <div className="card product-container">
-            <div className="product-thumb">
+            <div className="product-thumb d-flex">
               <img
                 src={require('../../images/products/disposable-booties.png')}
-                className="card-img-top rounded"
+                className="card-img-top rounded align-self-center"
                 alt="disposable-booties"
               />
             </div>
@@ -70,12 +70,12 @@ const Product = () => {
             </div>
           </div>
         </div>
-        <div className="col-sm-3 product-lot">
+        <div className="col-sm-3 product-lot py-2">
           <div className="card product-container">
-            <div className="product-thumb">
+            <div className="product-thumb d-flex">
               <img
                 src={require('../../images/products/disposable-gown.png')}
-                className="card-img-top rounded"
+                className="card-img-top rounded align-self-center"
                 alt="disposable-gown"
               />
             </div>

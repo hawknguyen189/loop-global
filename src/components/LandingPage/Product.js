@@ -44,7 +44,7 @@ const Product = () => {
                   </ul>
                 </div>
               </div>
-              <p className="product-name text-center">Face Shield</p>
+              <p className="product-name text-center">Protective Shield</p>
             </div>
           </div>
         </div>

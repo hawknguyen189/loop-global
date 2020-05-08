@@ -225,14 +225,15 @@ path {
           img {
             transition: all 0.5s;
           }
-          height:240px;
+          height: 180px;
+          // padding-bottom: 100%;
         }
-        .product-container{
+        .product-container {
           // height:100%;
         }
         .product-desc {
           position: relative;
-          height:100%;
+          height: 100%;
           a {
             font-size: 1.2em;
             font-family: $font-display;
@@ -251,11 +252,11 @@ path {
           .product-action {
             visibility: hidden;
             position: absolute;
-            top: -180%;
+            top: -150%;
             left: 0%;
             // height:100%;
             width: 100%;
-            color: black!important;
+            color: black !important;
             // top: calc(height*0.5);
             a {
               width: 48px;
@@ -277,5 +278,17 @@ path {
     p {
       color: black !important;
     }
+  }
+}
+@media (min-width: 992px) {
+  .product-thumb {
+    height: 240px !important;
+    // padding-bottom: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .product-thumb {
+    height: 240px !important;
+    // padding-bottom: 100%;
   }
 }

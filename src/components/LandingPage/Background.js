@@ -33,7 +33,7 @@ const Background = () => {
                     <label htmlFor="name" className="font-weight-bold">
                       Name
                     </label>
-                    <input type="text" name="name" id="name" />
+                    <input type="text" name="name" id="name" required />
                   </div>
                   <div className="field half col-sm-4  mb-0">
                     <label htmlFor="email" className="font-weight-bold">

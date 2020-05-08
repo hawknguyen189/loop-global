@@ -31,7 +31,7 @@ const PPE = props => {
         </p>
       </div>
       <div className="ppe-item">
-        <h3>4-Ply Disposable Medical Face Mask</h3>
+        {/* <h3>4-Ply Disposable Medical Face Mask</h3>
         <div className="product-slider"></div>
         <div className="product-heading">
           <h6>
@@ -101,13 +101,16 @@ const PPE = props => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="container">
           <div className="row">
             <div className="col-sm d-flex justify-content-center">
-              <div className="btn btn-primary btn-request">
+              {/* <div className="btn btn-primary btn-request">
                 Request Quotation
-              </div>
+              </div> */}
+              <a href="/PPEPortfolio" className="btn btn-primary btn-request">
+                Request Quotation
+              </a>
             </div>
           </div>
         </div>

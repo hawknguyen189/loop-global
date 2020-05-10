@@ -34,8 +34,8 @@ const Header = props => (
         <p>
           We aim to bridge the gap in the communication hurdle between the
           emerging countries and the emerged ones all in terms of
-          Importing/Exporting, Offshoring, Outstourcing, or Turn-key. We're
-          proud to be your trusted global parter for the success of a global
+          Importing/Exporting, Offshoring, Outsourcing, or Turn-key. We're
+          proud to be your trusted global partner for the success of a global
           supply chain management.
         </p>
       </div>

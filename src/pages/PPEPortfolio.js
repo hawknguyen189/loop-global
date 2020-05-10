@@ -23,13 +23,19 @@ const PPEPortfolio = () => {
             <strong>
               "We aim to bridge the gap in the communication hurdle between the
               emerging countries and the emerged ones all in terms of
-              Importing/Exporting, Offshoring, Outstourcing, or Turn-key. We're
-              proud to be your trusted global parter for the success of a global
-              supply chain management. " - Loop Mondo CEO
+              Importing/Exporting, Offshoring, Outsourcing, or Turn-key. We're
+              proud to be your trusted global partner for the success of a
+              global supply chain management. " - Loop Mondo CEO
             </strong>
           </p>
         </div>
         {/* end ceo quote */}
+        <div className="container partnership text-center pb-5">
+          <h4>
+            Proud to be a partner of Vietnam Chamber of Commerce and Industry
+          </h4>
+          <img src={require("../images/landing-page/VCCI-logo.png")} alt="vcci partnership" className="img-fluid rounded"/>
+        </div>
         <div className="container policy text-right">
           <div className="row justify-content-end">
             <div className="col-sm-3">

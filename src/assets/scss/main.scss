@@ -218,6 +218,10 @@ path {
         }
         .product-action {
           visibility: visible !important;
+          a{
+            color:black!important;
+            background-color: transparent!important;
+          }
         }
       }
       .product-lot {
@@ -272,6 +276,11 @@ path {
           }
         }
       }
+    }
+  }
+  .partnership{
+    h4{
+      color:black!important;
     }
   }
   .policy {

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import landingForm from '../Utils/landingForm'
 
 const Background = () => {
@@ -54,18 +54,25 @@ const Background = () => {
                       Message
                     </label>
                     <textarea name="message" id="message" rows="4"></textarea>
+                    <ul className="actions pt-3">
+                      <li>
+                        <button className="button-success pure-button button-xlarge">
+                          <i className="fa fa-paper-plane"></i>&nbsp;Send
+                        </button>
+                      </li>
+                      <li>
+                        <input type="reset" value="Reset" />
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-sm-4 lp-logo d-flex justify-content-center align-items-center">
+                    <img
+                      src={require('../../images/loop-mondo.png')}
+                      alt="loop-mongdo-logo"
+                      className="img-fluid"
+                    />
                   </div>
                 </div>
-                <ul className="actions">
-                  <li>
-                    <button className="button-success pure-button button-xlarge">
-                      <i className="fa fa-paper-plane"></i>&nbsp;Send
-                    </button>
-                  </li>
-                  <li>
-                    <input type="reset" value="Reset" />
-                  </li>
-                </ul>
               </div>
               <div className="thankyou-lp-message" style={{ display: 'none' }}>
                 <h5 className="text-center">

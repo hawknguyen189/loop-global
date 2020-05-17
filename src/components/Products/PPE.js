@@ -108,7 +108,7 @@ const PPE = props => {
               {/* <div className="btn btn-primary btn-request">
                 Request Quotation
               </div> */}
-              <a href="/PPEPortfolio" className="btn btn-primary btn-request">
+              <a href="/PPEPortfolio" className="btn btn-primary btn-request" target="_blank">
                 Request Quotation
               </a>
             </div>

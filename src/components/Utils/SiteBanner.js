@@ -19,7 +19,7 @@ const SiteBanner = props => {
       >
         During this time, we are safely conducting business and doing our best
         to flaten the Covid-19 curve. Stay safe, be healthy and trust
-        LoopMondo's equipments to protect you. Click here to read more.
+        LoopMondo's equipments to protect you.
       </a>
     </div>
   )

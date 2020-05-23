@@ -23,9 +23,6 @@ const MeetTeam = () => {
             <p className="mb-0">
               <em>CEO</em>
             </p>
-            <p className="mb-0">
-              <i className="fas fa-phone-volume"></i> (+1) 514-984-4295
-            </p>
             <p>
               <i className="fas fa-envelope"></i> bachnx@loopmondo.com
             </p>
@@ -69,9 +66,6 @@ const MeetTeam = () => {
             <p className="mb-0">
               <em>Supplier Relationship Manager, CTO</em>
             </p>
-            <p className="mb-0">
-              <i className="fas fa-phone-volume"></i> (+84) 32-958-0696
-            </p>
             <p>
               <i className="fas fa-envelope"></i> tungnt@loopmondo.com
             </p>
@@ -112,9 +106,6 @@ const MeetTeam = () => {
             </p>
             <p className="mb-0">
               <em>Operation Manager, Web Dev</em>
-            </p>
-            <p className="mb-0">
-              <i className="fas fa-phone-volume"></i> (+1) 514-984-4295
             </p>
             <p>
               <i className="fas fa-envelope"></i> hocnt@loopmondo.com

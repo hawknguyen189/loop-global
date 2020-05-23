@@ -27,7 +27,7 @@ const Office = () => {
                 <i className="fas fa-map-marked-alt"></i>
               </strong>{' '}
               <a href="https://goo.gl/maps/MQH49wvCdRQ7mGmT6" target="_blank">
-                4026 Rue Mackenzie, Montreal, Quebec, H3S1E6
+                4860 Édouard-Montpetit 5 H3W 1P8 Montreal Québec Canada
               </a>
             </p>
           </div>

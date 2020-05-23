@@ -59,7 +59,7 @@ const Office = () => {
               <strong>
                 <i className="fas fa-mobile-alt contact-icon mr-2 text-center"></i>
               </strong>
-              +1 514-984-4295 (Mr. Hoc)
+              +1 514-553-4569 (Mr. Bach)
             </p>
           </div>
           <div className="col-sm-4">

@@ -27,7 +27,7 @@ const Office = () => {
                 <i className="fas fa-map-marked-alt"></i>
               </strong>{' '}
               <a href="https://goo.gl/maps/MQH49wvCdRQ7mGmT6" target="_blank">
-                4860 Édouard-Montpetit 5 H3W 1P8 Montreal Québec Canada
+                111 Rue Chabanel O Montréal, QC H2N 1C8
               </a>
             </p>
           </div>

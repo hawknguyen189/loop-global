@@ -26,7 +26,7 @@ const Office = () => {
               <strong>
                 <i className="fas fa-map-marked-alt"></i>
               </strong>{' '}
-              <a href="https://goo.gl/maps/MQH49wvCdRQ7mGmT6" target="_blank">
+              <a href="https://goo.gl/maps/DaER2G1NwQbQq9Pu6" target="_blank">
                 111 Rue Chabanel O Montréal, QC H2N 1C8
               </a>
             </p>
@@ -36,8 +36,8 @@ const Office = () => {
               <strong>
                 <i className="fas fa-map-marked-alt"></i>
               </strong>{' '}
-              <a href="https://goo.gl/maps/rKq4jvKaBfmMsHj26" target="_blank">
-                1B Hoàng Hoa Thám St, Hà Đông, Hà Nội, Vietnam
+              <a href="https://goo.gl/maps/2mYn6jtRLRMhg35b8" target="_blank">
+                86 Duy Tan St, Dich Vong Hau Ward, Cau Gia, Ha Noi, Vietnam
               </a>
             </p>
           </div>
@@ -46,14 +46,14 @@ const Office = () => {
               <strong>
                 <i className="fas fa-map-marked-alt"></i>
               </strong>{' '}
-              <a href="https://goo.gl/maps/9W5BdRyFCsPMo2ys5" target="_blank">
-                267 Thong Nhat St, Ward 10, Go vap District, Ho Chi Minh city,
+              <a href="https://goo.gl/maps/BZfbQ5Mx8vV6nfkf7" target="_blank">
+                4 Nguyen Dinh Chieu St, Da Kao Ward, District 1 , Ho Chi Minh city,
                 Vietnam
               </a>
             </p>
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-sm-4">
             <p>
               <strong>
@@ -76,7 +76,7 @@ const Office = () => {
               +84 32-958-0696 (Mr. Tung)
             </p>
           </div>
-        </div>
+        </div> */}
         {/* google map */}
         <div className="row">
           <div className="col-sm-4"></div>

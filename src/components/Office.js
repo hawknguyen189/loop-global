@@ -37,7 +37,7 @@ const Office = () => {
                 <i className="fas fa-map-marked-alt"></i>
               </strong>{' '}
               <a href="https://goo.gl/maps/2mYn6jtRLRMhg35b8" target="_blank">
-                86 Duy Tan St, Dich Vong Hau Ward, Cau Gia, Ha Noi, Vietnam
+                121-123 To Hieu, Ha Dong, Hanoi, Vietnam
               </a>
             </p>
           </div>
@@ -47,8 +47,8 @@ const Office = () => {
                 <i className="fas fa-map-marked-alt"></i>
               </strong>{' '}
               <a href="https://goo.gl/maps/BZfbQ5Mx8vV6nfkf7" target="_blank">
-                4 Nguyen Dinh Chieu St, Da Kao Ward, District 1 , Ho Chi Minh city,
-                Vietnam
+                4 Nguyen Dinh Chieu St, Da Kao Ward, District 1 , Ho Chi Minh
+                city, Vietnam
               </a>
             </p>
           </div>
